@@ -28,12 +28,12 @@ const Experience = () => {
         setValue(newValue);
     };
 
-    const tabStyle = (minWidth) =>{
+    const tabStyle = () =>{
         return {
             flexDirection: 'row',
             justifyContent: 'center',
             width: '14vmin',
-            minWidth: minWidth,
+            minWidth: 'fit-content',
             padding: '0px 5px 0px 5px',
             fontSize: 'calc(1vw + 10px)',
             fontFamily: 'Aqua',
@@ -66,15 +66,15 @@ const Experience = () => {
                     <IconButton href="https://github.com/hemsleya?tab=repositories" sx={{color:'#0077b5'}} ><Chip label="Github" icon={<GitHubIcon  sx={{color:'#0077b5'}}/>} sx={{backgroundColor:'rgba(0, 0, 0, 0)', fontSize:'calc(0.5vw + 12px)'}}/></IconButton>
                     <br/>
                     <TabContext value={value}>
-                    <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'inherit', fontSize: "calc(1vw + 10px)"}}>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'inherit', fontSize: "calc(0.5vw + 10px)"}}>
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
                               textColor="primary.dark"
                               indicatorColor="secondary"
                               variant="fullWidth"
                               sx={{width: 'fit-content'}}>
-                            <Tab sx={tabStyle('50px')} label="Work" value={'1'}/>
-                            <Tab sx={tabStyle('50px')} label="Uni" value={'2'}/>
-                            <Tab sx={tabStyle('100px')} label="School" value={'3'}/>
+                            <Tab sx={tabStyle} label="Work" value={'1'}/>
+                            <Tab sx={tabStyle} label="Uni" value={'2'}/>
+                            <Tab sx={tabStyle} label="School" value={'3'}/>
                         </Tabs>
                     </Box>
                     <TabPanel value={'1'} index={0}>
