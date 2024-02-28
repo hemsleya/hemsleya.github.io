@@ -62,7 +62,7 @@ const Misc = () => {
                         <img src="./media/dance.JPG" alt="logo" style={{height:'50vmin'}}/>
                     </div>
                     <div style={{display: "flex", padding:'10px'}}>
-                        <img src="./media/hockey.JPG" alt="logo" style={{height:'50vmin'}}/>
+                        <img src="./media/hockey.jpg" alt="logo" style={{height:'50vmin'}}/>
                         <Box sx={{
                             width: '100%',
                             height: '100%',
